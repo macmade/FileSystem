@@ -1,0 +1,58 @@
+/*******************************************************************************
+ * Copyright (c) 2012, Jean-David Gadina <macmade@eosgarden.com>
+ * All rights reserved
+ ******************************************************************************/
+ 
+/* $Id$ */
+
+/*!
+ * @file        ...
+ * @copyright   eosgarden 2012 - Jean-David Gadina <macmade@eosgarden.com>
+ * @abstract    ...
+ */
+
+"MountPoints"                       = "Mount points";
+"SizeBytes"                         = "%.0f bytes";
+"SizeKiloBytes"                     = "%.2f KB";
+"SizeMegaBytes"                     = "%.2f MB";
+"SizeGigaBytes"                     = "%.2f GB";
+"MountPointAlertTitle"              = "Error";
+"MountPointAlertText"               = "The selected mount point cannot be accessed.";
+"Items"                             = "%u items";
+"ASCII"                             = "ASCII";
+"Hex"                               = "Hex";
+"OpenInAlertTitle"                  = "No compatible application";
+"OpenInAlertText"                   = "Your device doesn't have an application supporting this kind of file.";
+"InfosSection-0"                    = "General";
+"InfosSection-1"                    = "Permissions";
+"InfosSection-2"                    = "Flags";
+"InfosSection-3"                    = "File system attributes";
+"FileType"                          = "File type:";
+"FileSize"                          = "File size:";
+"CreationDate"                      = "Creation date:";
+"ModificationDate"                  = "Modification date:";
+"Owner"                             = "Owner:";
+"Group"                             = "Group:";
+"Permissions"                       = "Permissions:";
+"ReferenceCount"                    = "Reference count:";
+"SystemFileNumber"                  = "System file number:";
+"SystemNumber"                      = "System number:";
+"Flag-Archived"                     = "Archived:";
+"Flag-Hidden"                       = "Hidden:";
+"Flag-NoDump"                       = "No dump:";
+"Flag-Opaque"                       = "Opaque:";
+"Flag-SystemAppendOnly"             = "System append-only:";
+"Flag-SystemImmutable"              = "System immutable:";
+"Flag-UserAppendOnly"               = "User append-only:";
+"Flag-UserImmutable"                = "User immutable:";
+"Yes"                               = "Yes";
+"No"                                = "No";
+"NSFileTypeDirectory"               = "Directory";
+"NSFileTypeRegular"                 = "Regular file";
+"NSFileTypeSymbolicLink"            = "Symbolic link";
+"NSFileTypeSocket"                  = "Socket";
+"NSFileTypeCharacterSpecial"        = "Character special file";
+"NSFileTypeBlockSpecial"            = "Block special file";
+"NSFileTypeUnknown"                 = "Unknown";
+"ProtectedFileAlertTitle"           = "Protected file";
+"ProtectedFileAlertText"            = "The selected file is protected by the system. No information is available.";
