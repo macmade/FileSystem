@@ -114,7 +114,6 @@
 #pragma clang diagnostic fatal "-Wnewline-eof"
 #pragma clang diagnostic fatal "-Wnon-gcc"
 #pragma clang diagnostic fatal "-Wnon-virtual-dtor"
-#pragma clang diagnostic fatal "-Wnonfragile-abi2"
 #pragma clang diagnostic fatal "-Wnonnull"
 #pragma clang diagnostic fatal "-Wnonportable-cfstrings"
 #pragma clang diagnostic fatal "-Wnull-dereference"
