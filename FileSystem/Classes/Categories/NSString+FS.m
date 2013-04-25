@@ -13,6 +13,10 @@
 
 #import "NSString+FS.h"
 
+#ifdef __clang__
+#pragma clang diagnostic ignored "-Wformat-nonliteral"
+#endif
+
 @implementation NSString( FS )
 
 + ( NSString * )stringForSize: ( uint64_t )bytes
