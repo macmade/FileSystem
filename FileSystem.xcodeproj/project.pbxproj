@@ -226,6 +226,7 @@
 		05341A6D15342D5D0089F70C /* UIImage+FS.m in Sources */ = {isa = PBXBuildFile; fileRef = 05341A6C15342D5D0089F70C /* UIImage+FS.m */; };
 		05341A7015342D6C0089F70C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05341A6F15342D6C0089F70C /* ImageIO.framework */; };
 		05341A7315342D9B0089F70C /* FSImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05341A7215342D9B0089F70C /* FSImageScrollView.m */; };
+		054F11D11729B038006C5CE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F11D01729B038006C5CE4 /* Default-568h@2x.png */; };
 		058C48851539E6B9007C1DD6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 058C487A1539E6B9007C1DD6 /* Icon.png */; };
 		058C48861539E6B9007C1DD6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 058C487B1539E6B9007C1DD6 /* Icon@2x.png */; };
 		058C48871539E6B9007C1DD6 /* Icon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 058C487C1539E6B9007C1DD6 /* Icon_iPad.png */; };
@@ -502,6 +503,7 @@
 		05341A6F15342D6C0089F70C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		05341A7115342D9B0089F70C /* FSImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSImageScrollView.h; sourceTree = "<group>"; };
 		05341A7215342D9B0089F70C /* FSImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSImageScrollView.m; sourceTree = "<group>"; };
+		054F11D01729B038006C5CE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		058C487A1539E6B9007C1DD6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		058C487B1539E6B9007C1DD6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		058C487C1539E6B9007C1DD6 /* Icon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_iPad.png; sourceTree = "<group>"; };
@@ -946,6 +948,7 @@
 		058C487E1539E6B9007C1DD6 /* App-LaunchScreens */ = {
 			isa = PBXGroup;
 			children = (
+				054F11D01729B038006C5CE4 /* Default-568h@2x.png */,
 				058C487F1539E6B9007C1DD6 /* Default.png */,
 				058C48801539E6B9007C1DD6 /* Default@2x.png */,
 				058C48811539E6B9007C1DD6 /* Default_iPad-Landscape.png */,
@@ -1267,6 +1270,7 @@
 				058C488C1539E6B9007C1DD6 /* Default_iPad-Landscape@2x.png in Resources */,
 				058C488D1539E6B9007C1DD6 /* Default_iPad-Portrait.png in Resources */,
 				058C488E1539E6B9007C1DD6 /* Default_iPad-Portrait@2x.png in Resources */,
+				054F11D11729B038006C5CE4 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
