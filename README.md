@@ -22,6 +22,11 @@ FileSystem used to be available on the AppStore.
 Unfortunately, after a few years of availability, Apple decided to [remove it](http://www.noxeos.com/2012/05/27/apple-kills-filesystem-app/).  
 The complete source code is now available freely.
 
+Project home
+------------
+
+Project home can be found at: http://xs-labs.com/en/projects/filesystem/
+
 License
 -------
 
