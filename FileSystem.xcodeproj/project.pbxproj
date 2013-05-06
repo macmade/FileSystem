@@ -1041,7 +1041,7 @@
 			attributes = {
 				CLASSPREFIX = FS;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = eosgarden;
+				ORGANIZATIONNAME = XS-Labs;
 			};
 			buildConfigurationList = 051CB4F915336F580034E034 /* Build configuration list for PBXProject "FileSystem" */;
 			compatibilityVersion = "Xcode 3.2";
