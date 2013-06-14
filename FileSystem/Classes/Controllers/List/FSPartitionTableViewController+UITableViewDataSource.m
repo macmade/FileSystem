@@ -38,6 +38,7 @@
 #import "FSPartitionTableViewController+UITableViewDataSource.h"
 #import "FSPartitionTableViewCell.h"
 #import "FSGroupedTableViewCellBackgroundView.h"
+#import "UIDevice+FS.h"
 
 @implementation FSPartitionTableViewController( UITableViewDataSource )
 
@@ -101,7 +102,10 @@
         backgroundView.backgroundViewType = FSGroupedTableViewCellBackgroundViewTypeMiddle;
     }
     
-    cell.backgroundView = backgroundView;
+    if( [ [ UIDevice currentDevice ] systemMajorVersion ] < 7 )
+    {
+        cell.backgroundView = backgroundView;
+    }
     
     return cell;
 }

@@ -77,7 +77,6 @@
 #pragma clang diagnostic fatal "-Wctor-dtor-privacy"
 #pragma clang diagnostic fatal "-Wcustom-atomic-properties"
 #pragma clang diagnostic fatal "-Wdeclaration-after-statement"
-#pragma clang diagnostic fatal "-Wdefault-arg-special-member"
 #pragma clang diagnostic fatal "-Wdelegating-ctor-cycles"
 #pragma clang diagnostic fatal "-Wdelete-non-virtual-dtor"
 #pragma clang diagnostic fatal "-Wdeprecated-declarations"
@@ -208,6 +207,7 @@
 /*
  * Not recognized by Apple implementation:
  * 
+ * #pragma clang diagnostic fatal "-Wdefault-arg-special-member"
  * #pragma clang diagnostic fatal "-Wauto-import"
  * #pragma clang diagnostic fatal "-Wbuiltin-requires-header"
  * #pragma clang diagnostic fatal "-Wc++0x-narrowing"

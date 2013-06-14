@@ -43,6 +43,7 @@
 #import "FSPreferences.h"
 #import "FSFileListTableViewController.h"
 #import "FSFile.h"
+#import "UIDevice+FS.h"
 
 @implementation FSPartitionTableViewController
 
@@ -141,7 +142,7 @@
                             | UIViewAutoresizingFlexibleRightMargin
                             | UIViewAutoresizingFlexibleBottomMargin;
     
-    if( [ [ UIDevice currentDevice ] userInterfaceIdiom ] == UIUserInterfaceIdiomPad )
+    if( [ [ UIDevice currentDevice ] userInterfaceIdiom ] == UIUserInterfaceIdiomPad || [ [ UIDevice currentDevice ] systemMajorVersion ] >= 7 )
     {
         label.textColor = [ UIColor colorWithRed: ( CGFloat )0.44 green: ( CGFloat )0.47 blue: ( CGFloat )0.5 alpha: ( CGFloat )1 ];
     }

@@ -37,6 +37,7 @@
 
 #import "FSFileListTableViewCell.h"
 #import "FSFile.h"
+#import"UIDevice+FS.h"
 
 NSString * const FSFileListTableViewCellID = @"FSFileListTableViewCell";
 
@@ -67,6 +68,11 @@ static FSFileListTableViewCell * __activeCell = nil;
         height     = self.bounds.size.height;
         leftWidth  = ( self.bounds.size.width * ( CGFloat )0.65 );
         rightWidth = ( self.bounds.size.width * ( CGFloat )0.20 );
+        
+        if( [ [ UIDevice currentDevice ] systemMajorVersion ] >= 7 )
+        {
+            leftWidth -= ( CGFloat )40;
+        }
         
         _mainLabel      = [ [ UILabel alloc ] initWithFrame: CGRectMake( x,              y, leftWidth  - x, height - y ) ];
         _alternateLabel = [ [ UILabel alloc ] initWithFrame: CGRectMake( leftWidth + 10, y, rightWidth,     height - y ) ];
@@ -122,7 +128,7 @@ static FSFileListTableViewCell * __activeCell = nil;
 {
     [ super layoutSubviews ];
     
-    if( _showInfos == YES )
+    if( _showInfos == YES && [ [ UIDevice currentDevice ] systemMajorVersion ] < 7 )
     {
         _mainLabel.textColor      = [ UIColor lightTextColor ];
         _alternateLabel.textColor = [ UIColor lightTextColor ];
@@ -140,17 +146,31 @@ static FSFileListTableViewCell * __activeCell = nil;
         self.backgroundView = [ [ [ UIView alloc ] initWithFrame: CGRectZero ] autorelease ];
     }
     
-    if( _showInfos == YES )
+    if( [ [ UIDevice currentDevice ] systemMajorVersion ] < 7 )
     {
-        self.backgroundView.backgroundColor = [ UIColor colorWithPatternImage: [ UIImage imageNamed: @"CellBackground-Selected.png" ] ];
-    }
-    else if( _alternateBackground == YES )
-    {
-        self.backgroundView.backgroundColor = [ UIColor colorWithPatternImage: [ UIImage imageNamed: @"CellBackground-Blue.png" ] ];
+        if( _showInfos == YES )
+        {
+            self.backgroundView.backgroundColor = [ UIColor colorWithPatternImage: [ UIImage imageNamed: @"CellBackground-Selected.png" ] ];
+        }
+        else if( _alternateBackground == YES )
+        {
+            self.backgroundView.backgroundColor = [ UIColor colorWithPatternImage: [ UIImage imageNamed: @"CellBackground-Blue.png" ] ];
+        }
+        else
+        {
+            self.backgroundView.backgroundColor = [ UIColor colorWithPatternImage: [ UIImage imageNamed: @"CellBackground.png" ] ];
+        }
     }
     else
     {
-        self.backgroundView.backgroundColor = [ UIColor colorWithPatternImage: [ UIImage imageNamed: @"CellBackground.png" ] ];
+        if( _showInfos == YES )
+        {
+            self.backgroundColor = [ UIColor colorWithRed: 0.95 green: 0.95 blue: 0.95 alpha: 1 ];
+        }
+        else
+        {
+            self.backgroundColor = [ UIColor clearColor ];
+        }
     }
 }
 

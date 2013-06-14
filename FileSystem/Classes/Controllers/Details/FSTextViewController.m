@@ -84,11 +84,6 @@
     
     _hud        = [ FSHUDView new ];
     _hud.center = self.view.center;
-    
-    if( _file.size > 0 )
-    {
-        [ self.view addSubview: _hud ];
-    }
 }
 
 - ( void )viewDidAppear: ( BOOL )animated
@@ -100,6 +95,11 @@
     UISegmentedControl * segment;
     
     [ super viewDidAppear: animated ];
+    
+    if( _file.size > 0 && _hasText == NO && _hasHex == NO )
+    {
+        [ self.view addSubview: _hud ];
+    }
     
     spacer = [ [ UIBarButtonItem alloc ] initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace target: nil action: NULL ];
     

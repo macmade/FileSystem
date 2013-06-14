@@ -226,6 +226,7 @@
 		05341A6D15342D5D0089F70C /* UIImage+FS.m in Sources */ = {isa = PBXBuildFile; fileRef = 05341A6C15342D5D0089F70C /* UIImage+FS.m */; };
 		05341A7015342D6C0089F70C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05341A6F15342D6C0089F70C /* ImageIO.framework */; };
 		05341A7315342D9B0089F70C /* FSImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05341A7215342D9B0089F70C /* FSImageScrollView.m */; };
+		054A7A991767D1AB00069249 /* UIDevice+FS.m in Sources */ = {isa = PBXBuildFile; fileRef = 054A7A981767D1AB00069249 /* UIDevice+FS.m */; };
 		054F11D11729B038006C5CE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054F11D01729B038006C5CE4 /* Default-568h@2x.png */; };
 		058C48851539E6B9007C1DD6 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 058C487A1539E6B9007C1DD6 /* Icon.png */; };
 		058C48861539E6B9007C1DD6 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 058C487B1539E6B9007C1DD6 /* Icon@2x.png */; };
@@ -503,6 +504,8 @@
 		05341A6F15342D6C0089F70C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		05341A7115342D9B0089F70C /* FSImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSImageScrollView.h; sourceTree = "<group>"; };
 		05341A7215342D9B0089F70C /* FSImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSImageScrollView.m; sourceTree = "<group>"; };
+		054A7A971767D1AB00069249 /* UIDevice+FS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+FS.h"; sourceTree = "<group>"; };
+		054A7A981767D1AB00069249 /* UIDevice+FS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+FS.m"; sourceTree = "<group>"; };
 		054F11D01729B038006C5CE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		058C487A1539E6B9007C1DD6 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		058C487B1539E6B9007C1DD6 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -850,6 +853,8 @@
 				05341A6C15342D5D0089F70C /* UIImage+FS.m */,
 				051CB6F115339FCF0034E034 /* NSString+FS.h */,
 				051CB6F215339FCF0034E034 /* NSString+FS.m */,
+				054A7A971767D1AB00069249 /* UIDevice+FS.h */,
+				054A7A981767D1AB00069249 /* UIDevice+FS.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1040,8 +1045,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FS;
-				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = XS-Labs;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "XS-Labs";
 			};
 			buildConfigurationList = 051CB4F915336F580034E034 /* Build configuration list for PBXProject "FileSystem" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1305,6 +1310,7 @@
 				05A5DED81534184100D935C9 /* FSTextViewController+Private.m in Sources */,
 				05A5DEEA15341B1C00D935C9 /* FSHUDView.m in Sources */,
 				05341A6D15342D5D0089F70C /* UIImage+FS.m in Sources */,
+				054A7A991767D1AB00069249 /* UIDevice+FS.m in Sources */,
 				05341A7315342D9B0089F70C /* FSImageScrollView.m in Sources */,
 				053001541534587A00BED3F9 /* FSPreferences.m in Sources */,
 				0530019E1534632000BED3F9 /* FSImageViewController+Private.m in Sources */,
@@ -1386,10 +1392,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
@@ -1451,6 +1453,7 @@
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -1462,10 +1465,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
