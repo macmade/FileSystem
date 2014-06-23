@@ -71,7 +71,7 @@
     
     @try
     {
-        cell.partition = [ _partitions objectAtIndex: indexPath.row ];
+        cell.partition = [ _partitions objectAtIndex: ( NSUInteger )( indexPath.row ) ];
     }
     @catch ( NSException * e )
     {

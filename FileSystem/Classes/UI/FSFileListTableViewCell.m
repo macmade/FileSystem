@@ -165,7 +165,7 @@ static FSFileListTableViewCell * __activeCell = nil;
     {
         if( _showInfos == YES )
         {
-            self.backgroundColor = [ UIColor colorWithRed: 0.95 green: 0.95 blue: 0.95 alpha: 1 ];
+            self.backgroundColor = [ UIColor colorWithRed: ( CGFloat )0.95 green: ( CGFloat )0.95 blue: ( CGFloat )0.95 alpha: ( CGFloat )1 ];
         }
         else
         {

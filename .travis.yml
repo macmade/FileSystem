@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: FileSystem.xcodeproj
+xcode_scheme: FileSystem
+xcode_sdk: iphonesimulator
