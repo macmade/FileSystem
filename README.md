@@ -2,6 +2,10 @@ FileSystem
 ==========
 
 [![Build Status](https://img.shields.io/travis/macmade/FileSystem.svg?branch=master&style=flat)](https://travis-ci.org/macmade/FileSystem)
+[![Issues](http://img.shields.io/github/issues/macmade/FileSystem.svg?style=flat)](https://github.com/macmade/FileSystem/issues)
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)
+![License](https://img.shields.io/badge/license-bsd-brightgreen.svg?style=flat)
+[![Contact](https://img.shields.io/badge/contact-@macmade-blue.svg?style=flat)](https://twitter.com/macmade)
 
 About
 -----
