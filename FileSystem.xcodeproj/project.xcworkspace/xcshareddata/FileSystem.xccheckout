@@ -2,35 +2,37 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DBD352DC-6016-4DB3-936B-AAB7F4680411</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FileSystem</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7171848F-E4B9-4DE1-9D92-7AAA04810C8C</key>
-		<string>ssh://github.com/macmade/FileSystem.git</string>
+		<key>416342138FB29AB892A5FD127E471379F5DD9273</key>
+		<string>github.com:macmade/FileSystem.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>FileSystem.xcodeproj/project.xcworkspace</string>
+	<string>FileSystem.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7171848F-E4B9-4DE1-9D92-7AAA04810C8C</key>
+		<key>416342138FB29AB892A5FD127E471379F5DD9273</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/macmade/FileSystem.git</string>
+	<string>github.com:macmade/FileSystem.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7171848F-E4B9-4DE1-9D92-7AAA04810C8C</string>
+	<string>416342138FB29AB892A5FD127E471379F5DD9273</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7171848F-E4B9-4DE1-9D92-7AAA04810C8C</string>
+			<string>416342138FB29AB892A5FD127E471379F5DD9273</string>
 			<key>IDESourceControlWCCName</key>
 			<string>FileSystem</string>
 		</dict>

@@ -51,7 +51,7 @@ static NSArray * __animationImages = nil;
     
     for( i = 1; i < 13; i++ )
     {
-        image = [ UIImage imageNamed: [ NSString stringWithFormat: @"load-%u.png", i ] ];
+        image = [ UIImage imageNamed: [ NSString stringWithFormat: @"load-%u.png", ( unsigned )i ] ];
         
         if( image != nil )
         {

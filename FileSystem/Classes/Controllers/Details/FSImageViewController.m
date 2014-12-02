@@ -145,7 +145,7 @@
     }
     
     image      = [ UIImage imageWithContentsOfFile: _file.path ];
-    label.text = [ NSString stringWithFormat: @"%u x %u", ( NSUInteger )image.size.width, ( NSUInteger )image.size.height ];
+    label.text = [ NSString stringWithFormat: @"%u x %u", ( unsigned )image.size.width, ( unsigned )image.size.height ];
     
     item                                    = [ [ UIBarButtonItem alloc ] initWithCustomView: label ];
     infos                                   = [ [ UIBarButtonItem alloc ] initWithBarButtonSystemItem: UIBarButtonSystemItemSearch target: self action: @selector( showInfos: ) ];

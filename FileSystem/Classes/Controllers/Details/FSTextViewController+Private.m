@@ -125,7 +125,7 @@
         
         fseek( f, 0, SEEK_END );
         
-        fileSize = ( size_t )ftell( f );
+        fileSize = ( unsigned int )ftell( f );
         
         fseek( f, 0, SEEK_SET );
         
