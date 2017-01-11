@@ -169,7 +169,7 @@
     _isBusy            = ( [ _attributes objectForKey: NSFileBusy ]            == nil ) ? NO : [ [ _attributes objectForKey: NSFileBusy ]            boolValue ];
     _extensionIsHidden = ( [ _attributes objectForKey: NSFileExtensionHidden ] == nil ) ? NO : [ [ _attributes objectForKey: NSFileExtensionHidden ] boolValue ];
     
-    err = stat( ( char * )[ _path cStringUsingEncoding: NSUTF8StringEncoding ], &fileStat );
+    err = stat( [ _path cStringUsingEncoding: NSUTF8StringEncoding ], &fileStat );
     
     if( err != 0 )
     {

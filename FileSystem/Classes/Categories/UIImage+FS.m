@@ -54,9 +54,9 @@
         return nil;
     }
     
-    options = ( CFDictionaryRef )[ NSDictionary dictionaryWithObjectsAndKeys:   ( id )kCFBooleanTrue,                           ( id )kCGImageSourceCreateThumbnailWithTransform,
-                                                                                ( id )kCFBooleanTrue,                           ( id )kCGImageSourceCreateThumbnailFromImageIfAbsent,
-                                                                                ( id )[ NSNumber numberWithFloat: maxSize ],    ( id )kCGImageSourceThumbnailMaxPixelSize,
+    options = ( CFDictionaryRef )[ NSDictionary dictionaryWithObjectsAndKeys:   ( const NSObject * )kCFBooleanTrue,                           ( const NSObject * )kCGImageSourceCreateThumbnailWithTransform,
+                                                                                ( const NSObject * )kCFBooleanTrue,                           ( const NSObject * )kCGImageSourceCreateThumbnailFromImageIfAbsent,
+                                                                                ( const NSObject * )[ NSNumber numberWithFloat: maxSize ],    ( const NSObject * )kCGImageSourceThumbnailMaxPixelSize,
                                                                                 nil
               ];
     cgImage = CGImageSourceCreateThumbnailAtIndex( source, 0, options );
